@@ -45,10 +45,15 @@
                 I have an MS in Computer Science from <a href="https://www.tamu.edu/">Texas A&M University</a>. I have a Bachelor's in Telecommunications Engineering and a Bachelor's in Business Analytics from <a href="https://www.comillas.edu/en/icai/">ICAI</a>.
               </p>
               <p style="text-align:center">
-                <a target="_blank" href="https://mailhide.io/e/tjfh8IcQ"> Email</a> &nbsp;/&nbsp;
+                <!-- <a target="_blank" href="https://mailhide.io/e/tjfh8IcQ"> Email</a> &nbsp;/&nbsp;
                 <a href="https://github.com/vibalcam">GitHub</a> &nbsp;/&nbsp;
                 <a href="https://scholar.google.com/citations?user=RRYZEfQAAAAJ">Google Scholar</a> &nbsp;/&nbsp;
-                <a href="https://www.linkedin.com/in/vicente-balmaseda/"> LinkedIn </a>
+                <a href="https://www.linkedin.com/in/vicente-balmaseda/"> LinkedIn </a> -->
+                <!-- <a target="_blank" href="{{ site.footer-links.email }}"> Email</a> &nbsp;/&nbsp;
+                <a href="https://github.com/{{ site.footer-links.github }}">GitHub</a> &nbsp;/&nbsp;
+                <a href="https://scholar.google.com/citations?user={{ site.footer-links.googlescholar }}">Google Scholar</a> &nbsp;/&nbsp;
+                <a href="https://www.linkedin.com/in/{{ site.footer-links.linkedin }}/"> LinkedIn </a> -->
+                {% include svg-icons.html %}
               </p>
             </td>
             <td style="padding:2.5%;width:40%;max-width:40%">
@@ -255,7 +260,7 @@
             <td style="padding:0px">
               <br>
               <p style="text-align:center;font-size:small;">
-                Updated at May 2024 (WIP)
+                Updated on May 2024 (WIP)
               </p>
             </td>
             <td style="padding:0px">
@@ -269,6 +274,14 @@
       </td>
     </tr>
   </table>
+
+  <div class="wrapper-footer">
+    <div class="container">
+      <footer class="footer">
+        {% include svg-icons.html %}
+      </footer>
+    </div>
+  </div>
 </body>
 
 </html>

@@ -17,21 +17,22 @@ avatar: images/2024-02-bw-circular.png
 #
 
 # Includes an icon in the footer for each username you enter
-# todo! use footers
 footer-links:
   dribbble:
-  email: vibalcam@tamu.edu
+  email: https://mailhide.io/e/tjfh8IcQ
   facebook:
   flickr:
   github: vibalcam
   instagram:
-  linkedin:
+  linkedin: vicente-balmaseda
   pinterest:
   rss: # just type anything here for a working RSS icon
   twitter:
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
+  googlescholar: RRYZEfQAAAAJ
+  researchgate: Vicente-Balmaseda
 
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
