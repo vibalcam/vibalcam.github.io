@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "TransformerKart: A Full SuperTuxKart AI Controller"
+title:  "Deep SuperTuxKart AI"
 date:   2020-12-01
 image: /images/supertux_hockey.png
 categories: project
