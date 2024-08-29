@@ -39,10 +39,10 @@
               <h1>
                 Vicente Balmaseda
               </h1>
-              <p>I am an incoming PhD student at the OptMAI Lab, part of the <a href="https://engineering.tamu.edu/cse/">Department of Computer Science & Engineering</a> at <a href="https://www.tamu.edu/">Texas A&M University</a>. My PhD advisor is <a href="https://engineering.tamu.edu/cse/profiles/yang-tianbao.html">Tianbao Yang</a>.
+              <p>I am a PhD student at the OptMAI Lab, part of the <a href="https://engineering.tamu.edu/cse/" target="_blank" rel="noopener noreferrer">Department of Computer Science & Engineering</a> at <a href="https://www.tamu.edu/" target="_blank" rel="noopener noreferrer">Texas A&M University</a>. My PhD advisor is <a href="https://engineering.tamu.edu/cse/profiles/yang-tianbao.html" target="_blank" rel="noopener noreferrer">Tianbao Yang</a>.
               </p>
               <p>
-                I have an MS in Computer Science from <a href="https://www.tamu.edu/">Texas A&M University</a>. I have a Bachelor's in Telecommunications Engineering and a Bachelor's in Business Analytics from <a href="https://www.comillas.edu/en/icai/">ICAI</a>.
+                I have an MS in Computer Science from <a href="https://www.tamu.edu/" target="_blank" rel="noopener noreferrer">Texas A&M University</a>. I have a Bachelor's in Telecommunications Engineering and a Bachelor's in Business Analytics from <a href="https://www.comillas.edu/en/icai/" target="_blank" rel="noopener noreferrer">ICAI</a>.
               </p>
               <p style="text-align:center">
                 <!-- <a target="_blank" href="https://mailhide.io/e/tjfh8IcQ"> Email</a> &nbsp;/&nbsp;
@@ -88,29 +88,32 @@
               <br>
               <em>{{post.venue}}</em>, {{ post.date | date: "%Y" }}
               <br>
-              {% if post.poster %}
-              <a href="{{post.poster}}">poster</a> /
-              {% endif %}
               {% if post.paper %}
-              <a href="{{post.paper}}">paper</a> /
-              {% endif %}
-              {% if post.arxiv %}
-              <a href="{{post.arxiv}}">arXiv</a> /
-              {% endif %}
-              {% if post.video %}
-              <a href="{{post.video}}">video</a> /
+              <a href="{{post.paper}}" target="_blank" rel="noopener noreferrer">paper</a> /
               {% endif %}
               {% if post.code %}
-              <a href="{{post.code}}">code</a> /
+              <a href="{{post.code}}" target="_blank" rel="noopener noreferrer">code</a> /
+              {% endif %}
+              {% if post.poster %}
+              <a href="{{post.poster}}" target="_blank" rel="noopener noreferrer">poster</a> /
+              {% endif %}
+              {% if post.video %}
+              <a href="{{post.video}}" target="_blank" rel="noopener noreferrer">video</a> /
               {% endif %}
               {% if post.slides %}
-              <a href="{{post.slides}}">slides</a> /
-              {% endif %}
-              {% if post.website %}
-              <a href="{{post.website}}">website</a> /
+              <a href="{{post.slides}}" target="_blank" rel="noopener noreferrer">slides</a> /
               {% endif %}
               {% if post.youtube %}
-              <a href="{{post.youtube}}">youtube</a> /
+              <a href="{{post.youtube}}" target="_blank" rel="noopener noreferrer">youtube</a> /
+              {% endif %}
+              {% if post.website %}
+              <a href="{{post.website}}" target="_blank" rel="noopener noreferrer">website</a> /
+              {% endif %}
+              {% if post.arxiv %}
+              <a href="{{post.arxiv}}" target="_blank" rel="noopener noreferrer">arXiv</a> /
+              {% endif %}
+              {% if post.venueSite %}
+              <a href="{{post.venueSite}}" target="_blank" rel="noopener noreferrer">venue</a> /
               {% endif %}
               <p></p>
               {{ post.excerpt }}
@@ -222,34 +225,34 @@
 
               <br>
               {% if post.website %}
-              <a href="{{post.website}}">website</a> /
+              <a href="{{post.website}}" target="_blank" rel="noopener noreferrer">website</a> /
               {% endif %}
               {% if post.paper %}
-              <a href="{{post.paper}}">paper</a> /
+              <a href="{{post.paper}}" target="_blank" rel="noopener noreferrer">paper</a> /
               {% endif %}
               {% if post.patent %}
-              <a href="{{post.patent}}">patent</a> /
+              <a href="{{post.patent}}" target="_blank" rel="noopener noreferrer">patent</a> /
               {% endif %}
               {% if post.patent2 %}
-              <a href="{{post.patent2}}">patent #2</a> /
+              <a href="{{post.patent2}}" target="_blank" rel="noopener noreferrer">patent #2</a> /
               {% endif %}
               {% if post.patent3 %}
-              <a href="{{post.patent3}}">patent #3</a> /
+              <a href="{{post.patent3}}" target="_blank" rel="noopener noreferrer">patent #3</a> /
               {% endif %}
               {% if post.video %}
-              <a href="{{post.video}}">video</a> /
+              <a href="{{post.video}}" target="_blank" rel="noopener noreferrer">video</a> /
               {% endif %}
               {% if post.video2 %}
-              <a href="{{post.video2}}">video #2</a> /
+              <a href="{{post.video2}}" target="_blank" rel="noopener noreferrer">video #2</a> /
               {% endif %}
               {% if post.code %}
-              <a href="{{post.code}}">code</a> /
+              <a href="{{post.code}}" target="_blank" rel="noopener noreferrer">code</a> /
               {% endif %}
               {% if post.poster %}
-              <a href="{{post.poster}}">poster</a> /
+              <a href="{{post.poster}}" target="_blank" rel="noopener noreferrer">poster</a> /
               {% endif %}
               {% if post.slides %}
-              <a href="{{post.slides}}">slides</a> /
+              <a href="{{post.slides}}" target="_blank" rel="noopener noreferrer">slides</a> /
               {% endif %}
               <p></p>
               {{ post.excerpt }}

@@ -8,7 +8,8 @@ categories: research
 authors: "<strong>Vicente Balmaseda</strong>, Ying Xu, Yixin Cao, Nate Veldt"
 venue: "Forty-first International Conference on Machine Learning (ICML 2024)"
 arxiv: https://arxiv.org/abs/2404.16131
-paper: https://icml.cc/virtual/2024/poster/34522
+paper: https://proceedings.mlr.press/v235/balmaseda24a.html
+venueSite: https://icml.cc/virtual/2024/poster/34522
 poster: assets/icml2024-cluster deletion-poster.pdf
 code: https://github.com/vibalcam/combinatorial-cluster-deletion
 ---
