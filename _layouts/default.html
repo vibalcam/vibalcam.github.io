@@ -44,20 +44,19 @@
                             <h1>
                                 Vicente Balmaseda
                             </h1>
-                            <p>I am a PhD student at the OptMAI Lab, part of the <a
+                            <p>I am a PhD student at the OptMAI Lab in the <a
                                     href="https://engineering.tamu.edu/cse/" target="_blank"
                                     rel="noopener noreferrer">Department of Computer Science & Engineering</a> at <a
                                     href="https://www.tamu.edu/" target="_blank" rel="noopener noreferrer">Texas A&M
-                                    University</a>. My PhD advisor is <a
+                                    University</a>, where I am advised by <a
                                     href="https://engineering.tamu.edu/cse/profiles/yang-tianbao.html" target="_blank"
-                                    rel="noopener noreferrer">Tianbao Yang</a>.
+                                    rel="noopener noreferrer">Dr. Tianbao Yang</a>.
                             </p>
                             <p>
-                                I have an MS in Computer Science from <a href="https://www.tamu.edu/" target="_blank"
-                                    rel="noopener noreferrer">Texas A&M University</a>. I have a Bachelor's in
-                                Telecommunications Engineering and a Bachelor's in Business Analytics from <a
+                                I hold an MS in Computer Science from <a href="https://www.tamu.edu/" target="_blank"
+                                    rel="noopener noreferrer">Texas A&M University</a>, as well as dual Bachelor's degrees in Telecommunications Engineering and Business Analytics from <a
                                     href="https://www.comillas.edu/en/icai/" target="_blank"
-                                    rel="noopener noreferrer">ICAI</a>.
+                                    rel="noopener noreferrer">ICAI, Comillas Pontificial University</a>.
                             </p>
                             <p style="text-align:center">
                                 <!-- <a target="_blank" href="https://mailhide.io/e/tjfh8IcQ"> Email</a> &nbsp;/&nbsp;
@@ -151,82 +150,82 @@
                 <br>
                 <br>
                 <!------------------------------------------------------------------------------------>
-                <!-- INTRO PREPRINTS -->
-                <table
-                    style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-                    <tr>
-                        <td style="padding:2.5%;width:100%;vertical-align:middle">
-                            <h2>Preprints</h2>
-                            <!-- <p>
-                Work in progress and preprints.
-              </p> -->
-                        </td>
-                    </tr>
-                </table>
-                <!-- PREPRINTS  -->
-                <table
-                    style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-                    {% for post in site.posts %}
-                    {% for cat in post.categories %}
-                    {% if cat == 'preprint' %}
-                    <tr>
-                        <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
-                            {% if post.image %}
-                            <a href="{{post.image}}" target="_blank">
-                                <img src="/tn{{post.image}}" alt="project image"
-                                    style="width:auto; height:auto; max-width:100%;" />
-                            </a>
-                            {% endif %}
-                        </td>
-                        <td style="padding:2.5%;width:75%;vertical-align:middle">
-                            <h3>{{post.title}}</h3>
-                            <br>
-                            {{post.authors}}
-                            <br>
-                            {% if post.venue %}
-                            <em>{{post.venue}}</em>, {{ post.date | date: "%Y" }}
-                            {% else %}
-                            <em>Preprint</em>, {{ post.date | date: "%Y" }}
-                            {% endif %}
-                            <br>
-                            {% if post.paper %}
-                            <a href="{{post.paper}}" target="_blank" rel="noopener noreferrer">paper</a> /
-                            {% endif %}
-                            {% if post.code %}
-                            <a href="{{post.code}}" target="_blank" rel="noopener noreferrer">code</a> /
-                            {% endif %}
-                            {% if post.poster %}
-                            <a href="{{post.poster}}" target="_blank" rel="noopener noreferrer">poster</a> /
-                            {% endif %}
-                            {% if post.video %}
-                            <a href="{{post.video}}" target="_blank" rel="noopener noreferrer">video</a> /
-                            {% endif %}
-                            {% if post.slides %}
-                            <a href="{{post.slides}}" target="_blank" rel="noopener noreferrer">slides</a> /
-                            {% endif %}
-                            {% if post.youtube %}
-                            <a href="{{post.youtube}}" target="_blank" rel="noopener noreferrer">youtube</a> /
-                            {% endif %}
-                            {% if post.website %}
-                            <a href="{{post.website}}" target="_blank" rel="noopener noreferrer">website</a> /
-                            {% endif %}
-                            {% if post.arxiv %}
-                            <a href="{{post.arxiv}}" target="_blank" rel="noopener noreferrer">arXiv</a> /
-                            {% endif %}
-                            {% if post.venueSite %}
-                            <a href="{{post.venueSite}}" target="_blank" rel="noopener noreferrer">venue</a> /
-                            {% endif %}
-                            <p></p>
-                            {{ post.excerpt }}
-                        </td>
-                    </tr>
-                    {% endif %}
-                    {% endfor %}
-                    {% endfor %}
-                </table>
-                <!-- END -->
-                <br>
-                <br>
+                {% assign preprints = site.posts | where: "category", "preprint" %}
+                {% if preprints.size > 0 %}
+                    <!-- INTRO PREPRINTS -->
+                    <table
+                        style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                        <tr>
+                            <td style="padding:2.5%;width:100%;vertical-align:middle">
+                                <h2>Preprints</h2>
+                            </td>
+                        </tr>
+                    </table>
+                    <!-- PREPRINTS  -->
+                    <table
+                        style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                        {% for post in site.posts %}
+                        {% for cat in post.categories %}
+                        {% if cat == 'preprint' %}
+                        <tr>
+                            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
+                                {% if post.image %}
+                                <a href="{{post.image}}" target="_blank">
+                                    <img src="/tn{{post.image}}" alt="project image"
+                                        style="width:auto; height:auto; max-width:100%;" />
+                                </a>
+                                {% endif %}
+                            </td>
+                            <td style="padding:2.5%;width:75%;vertical-align:middle">
+                                <h3>{{post.title}}</h3>
+                                <br>
+                                {{post.authors}}
+                                <br>
+                                {% if post.venue %}
+                                <em>{{post.venue}}</em>, {{ post.date | date: "%Y" }}
+                                {% else %}
+                                <em>Preprint</em>, {{ post.date | date: "%Y" }}
+                                {% endif %}
+                                <br>
+                                {% if post.paper %}
+                                <a href="{{post.paper}}" target="_blank" rel="noopener noreferrer">paper</a> /
+                                {% endif %}
+                                {% if post.code %}
+                                <a href="{{post.code}}" target="_blank" rel="noopener noreferrer">code</a> /
+                                {% endif %}
+                                {% if post.poster %}
+                                <a href="{{post.poster}}" target="_blank" rel="noopener noreferrer">poster</a> /
+                                {% endif %}
+                                {% if post.video %}
+                                <a href="{{post.video}}" target="_blank" rel="noopener noreferrer">video</a> /
+                                {% endif %}
+                                {% if post.slides %}
+                                <a href="{{post.slides}}" target="_blank" rel="noopener noreferrer">slides</a> /
+                                {% endif %}
+                                {% if post.youtube %}
+                                <a href="{{post.youtube}}" target="_blank" rel="noopener noreferrer">youtube</a> /
+                                {% endif %}
+                                {% if post.website %}
+                                <a href="{{post.website}}" target="_blank" rel="noopener noreferrer">website</a> /
+                                {% endif %}
+                                {% if post.arxiv %}
+                                <a href="{{post.arxiv}}" target="_blank" rel="noopener noreferrer">arXiv</a> /
+                                {% endif %}
+                                {% if post.venueSite %}
+                                <a href="{{post.venueSite}}" target="_blank" rel="noopener noreferrer">venue</a> /
+                                {% endif %}
+                                <p></p>
+                                {{ post.excerpt }}
+                            </td>
+                        </tr>
+                        {% endif %}
+                        {% endfor %}
+                        {% endfor %}
+                    </table>
+                    <!-- END -->
+                    <br>
+                    <br>
+                {% endif %}
                 <!------------------------------------------------------------------------------------>
                 <!-- INTRO PROJECTS -->
                 <table
@@ -315,7 +314,7 @@
                         <td style="padding:0px">
                             <br>
                             <p style="text-align:center;font-size:small;">
-                                Updated on February 2025
+                                Updated on May 2025
                             </p>
                         </td>
                         <td style="padding:0px">
