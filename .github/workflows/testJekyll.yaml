@@ -34,4 +34,6 @@ jobs:
       run: bundle exec jekyll build
 
     - name: Test HTML output with html-proofer
-      run: bundle exec htmlproofer ./_site --disable-external
+      run: bundle exec htmlproofer ./_site 
+      #run: bundle exec htmlproofer ./_site --disable-external
+
