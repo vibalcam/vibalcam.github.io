@@ -6,4 +6,4 @@ image: /images/supertux_hockey.png
 categories: project
 code: https://github.com/vibalcam/SuperTuxKart-hockey
 ---
-<!-- todo!! add description -->
+A deep learning agent trained to autonomously play SuperTuxKart hockey.
