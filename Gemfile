@@ -37,4 +37,4 @@ gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
 gem "webrick", "~> 1.9"
 
 # to test jekyll
-gem "html-proofer", "~> 5.0"
+gem "html-proofer", "~> 5.1"
